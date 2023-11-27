@@ -2,7 +2,15 @@
 #define HEAD
 #include <stdio.h>
 #include <stdlib.h>
-
+#define clock my_clock
+/**
+ * my_clock - blabla bla
+ * Return: 1
+ */
+int my_clock()
+{
+	return (1);
+}
 /**
  * struct listint_s - singly linked list
  * @n: integer
