@@ -7,4 +7,4 @@ for i in list(range(ord('a'), ord('z') + 1))[::-1]:
     else:
         s += chr(i)
     is_up = -is_up
-print(s, end='')
+print("{}".format(s), end='')
