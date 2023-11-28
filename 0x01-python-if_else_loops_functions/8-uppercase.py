@@ -4,4 +4,4 @@ def uppercase(str):
     for idx, i in enumerate(str):
         if i in lower_range:
             str[idx] = ord('A') + (ord(i) - ord('a'))
-    return str
+    print("{}".format(str))
