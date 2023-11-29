@@ -19,7 +19,7 @@ listint_t *insert_node(listint_t **head, int number)
 	original_head = *head;
 	new_item->n = number;
 	/* if list is empty */
-	if (*head == NULL)
+	if (original_head == NULL)
 	{
 		*head = new_item;
 		new_item->next = NULL;
@@ -28,11 +28,11 @@ listint_t *insert_node(listint_t **head, int number)
 	/* find the location where new_item will be locacted */
 	while (1)
 	{
-		if ((*head)->n < number)
+		if (original_head->n < number)
 		{
-			add_after_me = *head;
-			if ((*head)->next != NULL)
-				head = &((*head)->next);
+			add_after_me = original_head;
+			if (original_head->next != NULL)
+				original_head = original_head->next;
 			else
 			{
 				add_before_me = NULL;
@@ -41,12 +41,11 @@ listint_t *insert_node(listint_t **head, int number)
 		}
 		else
 		{
-			add_before_me = *head;
+			add_before_me = original_head;
 			break;
 		}
 	}
 	add_after_me->next = new_item;
 	new_item->next = add_before_me;
-	*head = original_head;
 	return (new_item);
 }
