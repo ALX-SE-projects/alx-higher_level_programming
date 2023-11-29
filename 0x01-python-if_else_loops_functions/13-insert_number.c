@@ -12,7 +12,7 @@
 listint_t *insert_node(listint_t **head, int number)
 {
 	listint_t *new_item = malloc(sizeof(listint_t));
-	listint_t *add_after_me, *add_before_me, *original_head;
+	listint_t *add_after_me = NULL, *add_before_me, *original_head;
 
 	if (!new_item)
 		return (NULL);
@@ -45,7 +45,13 @@ listint_t *insert_node(listint_t **head, int number)
 			break;
 		}
 	}
-	add_after_me->next = new_item;
+	if (add_after_me)
+		add_after_me->next = new_item;
+	else
+	{
+		/* insert node at the begaining */
+		*head = new_item;
+	}
 	new_item->next = add_before_me;
 	return (new_item);
 }
