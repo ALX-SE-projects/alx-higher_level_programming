@@ -5,7 +5,7 @@ if __name__ == '__main__':
     _len = len(argv)
     print(f"{_len} argument", end='')
     if _len == 0:
-        print('.')
+        print('s.')
     else:
         if _len != 1:
             print("s", end='')
