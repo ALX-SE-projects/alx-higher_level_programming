@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-alphabet = tuple(range(65, 91))
-eval(f"print("{("%c") * len(alphabet)}" % alphabet)")
+from functools import reduce
+print(reduce(lambda x, y: x + y, map(chr, tuple(range(65, 91)))))
