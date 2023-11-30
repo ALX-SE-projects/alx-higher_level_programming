@@ -7,7 +7,7 @@ if __name__ == '__main__':
     if _len == 0:
         print('.')
     else:
-        if _len == 1:
+        if _len != 1:
             print("s", end='')
         print(':')
         for idx, arg in enumerate(argv, start=1):
