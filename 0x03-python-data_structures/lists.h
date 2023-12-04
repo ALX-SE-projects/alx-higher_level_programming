@@ -25,6 +25,7 @@ int is_palindrome(listint_t **head);
 
 #ifndef CLOCK_H
 #define CLOCK_H
+#include <time.h>
 /**
  * mmclock - blabla bla
  * Return: 1
