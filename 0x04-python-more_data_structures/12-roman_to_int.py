@@ -10,6 +10,7 @@ __romans = {
     'M': 1000,
     }
 
+
 def _ts(ln):
     ts = 0
     ml = max(ln)
@@ -86,6 +87,7 @@ def roman_to_int(roman_string):
         num += total
     return num
 
+
 if __name__ == '__main__':
     # print(roman_to_int('IIXCDI'))
     """
@@ -96,113 +98,117 @@ if __name__ == '__main__':
     DCCVII = 707
     """
     roman_numerals = dict([
-    ('MCMXCVIII', 1998),
-    ('MDCLXVI', 1666),
-    ('MMXIX', 2019),
-    ('MMMDCCCXCII', 3392),
-    ('MMMM', 4000),
-    ('MCMXCIX', 1999),
-    ('MMCCCXCVII', 2397),
-    ('MMCCCXXXIII', 2333),
-    ('MMMDCCLXIX', 3369),
-    ('MMMDCCLXXXVIII', 3388),
-    ('MMMDCCLXXVII', 3377),
-    ('MMMDCCLXXVI', 3376),
-    ('MMMDCCLXXV', 3375),
-    ('MMMDCCLXXIV', 3374),
-    ('MMMDCCLXXIII', 3373),
-    ('MMMDCCLXXII', 3372),
-    ('MMMDCCLXXI', 3371),
-    ('MMMDCCLXX', 3370),
-    ('MMMDCCLXIX', 3369),
-    ('MMMDCCLXVIII', 3368),
-    ('MMMDCCLXVII', 3367),
-    ('MMMDCCLXVI', 3366),
-    ('MMMDCCLXV', 3365),
-    ('MMMDCCLXIV', 3364),
-    ('MMMDCCLXIII', 3363),
-    ('MMMDCCLXII', 3362),
-    ('MMMDCCLXI', 3361),
-    ('MMMDCCLX', 3360),
-    ('MMMDCCLXIX', 3369),
-    ('MMMDCCLXVIII', 3368),
-    ('MMMDCCLXVII', 3367),
-    ('MMMDCCLXVI', 3366),
-    ('MMMDCCLXV', 3365),
-    ('MMMDCCLXIV', 3364),
-    ('MMMDCCLXIII', 3363),
-    ('MMMDCCLXII', 3362),
-    ('MMMDCCLXI', 3361),
-    ('MMMDCCLX', 3360),
-    ('MMMDCCLXIX', 3369),
-    ('MMMDCCLXVIII', 3368),
-    ('MMMDCCLXVII', 3367),
-    ('MMMDCCLXVI', 3366),
-    ('MMMDCCLXV', 3365),
-    ('MMMDCCLXIV', 3364),
-    ('MMMDCCLXIII', 3363),
-    ('MMMDCCLXII', 3362),
-    ('MMMDCCLXI', 3361),
-    ('MMMDCCLX', 3360),
-    ('MMMDCCLXIX', 3369),
-    ('MMMDCCLXVIII', 3368),
-    ('MMMDCCLXVII', 3367),
-    ('MMMDCCLXVI', 3366),
-    ('MMMDCCLXV', 3365),
-    ('MMMDCCLXIV', 3364),
-    ('MMMDCCLXIII', 3363),
-    ('MMMDCCLXII', 3362),
-    ('MMMDCCLXI', 3361),
-    ('MMMDCCLX', 3360),
-    ('MMMDCCLXIX', 3369),
-    ('MMMDCCLXVIII', 3368),
-    ('MMMDCCLXVII', 3367),
-    ('MMMDCCLXVI', 3366),
-    ('MMMDCCLXV', 3365),
-    ('MMMDCCLXIV', 3364),
-    ('MMMDCCLXIII', 3363),
-    ('MMMDCCLXII', 3362),
-    ('MMMDCCLXI', 3361),
-    ('MMMDCCLX', 3360),
-    ('MMMDCCLXIX', 3369),
-    ('MMMDCCLXVIII', 3368),
-    ('MMMDCCLXVII', 3367),
-    ('MMMDCCLXVI', 3366),
-    ('MMMDCCLXV', 3365),
-    ('MMMDCCLXIV', 3364),
-    ('MMMDCCLXIII', 3363),
-    ('MMMDCCLXII', 3362),
-    ('MMMDCCLXI', 3361),
-    ('MMMDCCLX', 3360),
-    ('MMMDCCLXIX', 3369),
-    ('MMMDCCLXVIII', 3368),
-    ('MMMDCCLXVII', 3367),
-    ('MMMDCCLXVI', 3366),
-    ('MMMDCCLXV', 3365),
-    ('MMMDCCLXIV', 3364),
-    ('MMMDCCLXIII', 3363),
-    ('MMMDCCLXII', 3362),
-    ('MMMDCCLXI', 3361),
-    ('MMMDCCLX', 3360),
-    ('MMMDCCLXIX', 3369),
-    ('MMMDCCLXVIII', 3368),
+        ('MCMXCVIII', 1998),
+        ('MDCLXVI', 1666),
+        ('MMXIX', 2019),
+        ('MMMDCCCXCII', 3392),
+        ('MMMM', 4000),
+        ('MCMXCIX', 1999),
+        ('MMCCCXCVII', 2397),
+        ('MMCCCXXXIII', 2333),
+        ('MMMDCCLXIX', 3369),
+        ('MMMDCCLXXXVIII', 3388),
+        ('MMMDCCLXXVII', 3377),
+        ('MMMDCCLXXVI', 3376),
+        ('MMMDCCLXXV', 3375),
+        ('MMMDCCLXXIV', 3374),
+        ('MMMDCCLXXIII', 3373),
+        ('MMMDCCLXXII', 3372),
+        ('MMMDCCLXXI', 3371),
+        ('MMMDCCLXX', 3370),
+        ('MMMDCCLXIX', 3369),
+        ('MMMDCCLXVIII', 3368),
+        ('MMMDCCLXVII', 3367),
+        ('MMMDCCLXVI', 3366),
+        ('MMMDCCLXV', 3365),
+        ('MMMDCCLXIV', 3364),
+        ('MMMDCCLXIII', 3363),
+        ('MMMDCCLXII', 3362),
+        ('MMMDCCLXI', 3361),
+        ('MMMDCCLX', 3360),
+        ('MMMDCCLXIX', 3369),
+        ('MMMDCCLXVIII', 3368),
+        ('MMMDCCLXVII', 3367),
+        ('MMMDCCLXVI', 3366),
+        ('MMMDCCLXV', 3365),
+        ('MMMDCCLXIV', 3364),
+        ('MMMDCCLXIII', 3363),
+        ('MMMDCCLXII', 3362),
+        ('MMMDCCLXI', 3361),
+        ('MMMDCCLX', 3360),
+        ('MMMDCCLXIX', 3369),
+        ('MMMDCCLXVIII', 3368),
+        ('MMMDCCLXVII', 3367),
+        ('MMMDCCLXVI', 3366),
+        ('MMMDCCLXV', 3365),
+        ('MMMDCCLXIV', 3364),
+        ('MMMDCCLXIII', 3363),
+        ('MMMDCCLXII', 3362),
+        ('MMMDCCLXI', 3361),
+        ('MMMDCCLX', 3360),
+        ('MMMDCCLXIX', 3369),
+        ('MMMDCCLXVIII', 3368),
+        ('MMMDCCLXVII', 3367),
+        ('MMMDCCLXVI', 3366),
+        ('MMMDCCLXV', 3365),
+        ('MMMDCCLXIV', 3364),
+        ('MMMDCCLXIII', 3363),
+        ('MMMDCCLXII', 3362),
+        ('MMMDCCLXI', 3361),
+        ('MMMDCCLX', 3360),
+        ('MMMDCCLXIX', 3369),
+        ('MMMDCCLXVIII', 3368),
+        ('MMMDCCLXVII', 3367),
+        ('MMMDCCLXVI', 3366),
+        ('MMMDCCLXV', 3365),
+        ('MMMDCCLXIV', 3364),
+        ('MMMDCCLXIII', 3363),
+        ('MMMDCCLXII', 3362),
+        ('MMMDCCLXI', 3361),
+        ('MMMDCCLX', 3360),
+        ('MMMDCCLXIX', 3369),
+        ('MMMDCCLXVIII', 3368),
+        ('MMMDCCLXVII', 3367),
+        ('MMMDCCLXVI', 3366),
+        ('MMMDCCLXV', 3365),
+        ('MMMDCCLXIV', 3364),
+        ('MMMDCCLXIII', 3363),
+        ('MMMDCCLXII', 3362),
+        ('MMMDCCLXI', 3361),
+        ('MMMDCCLX', 3360),
+        ('MMMDCCLXIX', 3369),
+        ('MMMDCCLXVIII', 3368),
+        ('MMMDCCLXVII', 3367),
+        ('MMMDCCLXVI', 3366),
+        ('MMMDCCLXV', 3365),
+        ('MMMDCCLXIV', 3364),
+        ('MMMDCCLXIII', 3363),
+        ('MMMDCCLXII', 3362),
+        ('MMMDCCLXI', 3361),
+        ('MMMDCCLX', 3360),
+        ('MMMDCCLXIX', 3369),
+        ('MMMDCCLXVIII', 3368),
     ])
+
     def romanToInt(s):
         """
         :type s: str
         :rtype: int
         """
-        roman = {'I':1,'V':5,'X':10,'L':50,'C':100,'D':500,'M':1000,'IV':4,'IX':9,'XL':40,'XC':90,'CD':400,'CM':900}
+        roman = {'I': 1, 'V': 5, 'X': 10, 'L': 50,
+                 'C': 100, 'D': 500, 'M': 1000,
+                 'IV': 4, 'IX': 9, 'XL': 40,
+                 'XC': 90, 'CD': 400, 'CM': 900}
         i = 0
         num = 0
         while i < len(s):
-            if i+1<len(s) and s[i:i+2] in roman:
-                num+=roman[s[i:i+2]]
-                i+=2
+            if i + 1 < len(s) and s[i:i + 2] in roman:
+                num += roman[s[i:i + 2]]
+                i += 2
             else:
-                #print(i)
-                num+=roman[s[i]]
-                i+=1
+                # print(i)
+                num += roman[s[i]]
+                i += 1
         return num
 
     for k in roman_numerals:
