@@ -17,6 +17,7 @@ def list_division(my_list_1, my_list_2, list_length):
             print("wrong type")
         finally:
             r[i] = d
+    return r
 
 
 if __name__ == '__main__':
