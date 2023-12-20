@@ -33,7 +33,6 @@ Todo:
 """
 
 
-
 class Square:
     """Represents a square
     Attributes:
@@ -87,7 +86,7 @@ class Square:
         Returns:
             None
         """
-        if !self.size:
+        if self.size == 0:
             print("")
             return
         for i in range(self.size):
