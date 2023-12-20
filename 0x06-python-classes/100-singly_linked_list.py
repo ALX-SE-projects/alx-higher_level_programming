@@ -42,6 +42,8 @@ class SinglyLinkedList:
 
     def __str__(self):
         current = self.__head
+        if current is None:
+            return ''
         r = ''
         while current.next_node:
             r += str(current.data) + '\n'
