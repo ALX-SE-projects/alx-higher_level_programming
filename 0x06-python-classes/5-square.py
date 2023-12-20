@@ -17,6 +17,10 @@ class Square:
         if size < 0:
             raise ValueError("size must be >= 0")
 
+    def area(self):
+        """Return the current area of the square."""
+        return self.__size ** 2
+
     @property
     def size(self):
         """Get/set the current size of the square."""
@@ -29,6 +33,9 @@ class Square:
         if value < 0:
             raise ValueError("size must be >= 0")
 
-    def area(self):
-        """Return the current area of the square."""
-        return self.__size ** 2
+    def my_print(self):
+        if !self.size:
+            print("")
+            return
+        for i in range(self.size):
+            print("#" * self.size)
