@@ -32,12 +32,14 @@ Todo:
    http://google.github.io/styleguide/pyguide.html
 
 """
+
+
 class Square:
     """Example Google style docstrings.
 
-    This module demonstrates documentation as specified by the `Google Python
-    Style Guide`_. Docstrings may extend over multiple lines. Sections are created
-    with a section header and a colon followed by a block of indented text.
+    This module demonstrates documentation as specified b
+    Style Guide`_. Docstrings may extend over multiple line
+    with a section header and a colon followed by a block of
 
     Example:
         Examples can be given using either the ``Example`` or ``Examples``
@@ -50,7 +52,7 @@ class Square:
     are also implicitly created anytime a new section starts.
 
     Attributes:
-        module_level_variable1 (int): Module level variables may be documented in
+        module_level_variable1 (int): Module level variab
             either the ``Attributes`` section of the module docstring, or in an
             inline docstring immediately following the variable.
 
@@ -66,4 +68,5 @@ class Square:
     http://google.github.io/styleguide/pyguide.html
 
     """
+
     ...
