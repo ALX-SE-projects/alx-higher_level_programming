@@ -92,9 +92,9 @@ class Square:
 
     def __lt__(self, square):
         return self.area() < square.area()
+
     def __ge__(self, square):
         return self.area() >= square.area()
 
     def __le__(self, square):
         return self.area() <= square.area()
-
