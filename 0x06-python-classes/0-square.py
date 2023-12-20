@@ -1,4 +1,4 @@
-#!/bin/python3
+#!/usr/bin/python3
 """Example Google style docstrings.
 
 This module demonstrates documentation as specified by the `Google Python
