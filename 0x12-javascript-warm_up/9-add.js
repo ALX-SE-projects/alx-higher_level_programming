@@ -1,8 +1,7 @@
 #!/usr/bin/node
-'use strict';
-const arg1 = Number(process.argv[2]);
-const arg2 = Number(process.argv[3]);
 function add (a, b) {
-  return a + b;
+  const c = a + b;
+  console.log(c);
 }
-console.log(add(arg1, arg2));
+
+add(Number(process.argv[2]), Number(process.argv[3]));
